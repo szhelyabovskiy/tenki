@@ -32,8 +32,8 @@ while(True):
 	time.sleep(dataInterval)
 
 	#Fill the dict with fresh measurements
-	data['direction'] = getDirection(declination)
-	pres_data = getPressure(calibrationData)
+	data['direction'] = getDirection(declination)	#get wind direction
+	pres_data = getPressure(calibrationData)	#get temperature and pressure info
 	data['temperature'] = pres_data['temp']
 	data['pressure'] = pres_data['pres']
 
